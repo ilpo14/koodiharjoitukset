@@ -1,0 +1,8 @@
+def unique_elements(arr)
+	elements = {}
+  	arr.each { |ele| elements[ele] = true }
+  return elements.keys
+end
+
+print unique_elements(['a', 'b', 'a', 'a', 'b', 'c']) #=> ["a", "b", "c"]
+puts
