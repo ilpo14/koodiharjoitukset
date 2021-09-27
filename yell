@@ -1,0 +1,20 @@
+def yell(words)
+  excl_words = []
+  
+  i = 0
+  
+  while i < words.length
+    og_words = words[i]
+    yell_words = og_words + "!"
+    excl_words << yell_words
+    
+    i += 1
+  end
+  
+  return excl_words
+  
+    end
+
+print yell(["hello", "world"]) # => ["hello!", "world!"]
+puts
+print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
