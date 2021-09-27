@@ -1,0 +1,17 @@
+def frequent_letters(string)
+	lettercount = Hash.new(0)
+  string.each_char {|char| lettercount[char] += 1}
+  
+  	frequentletters = []
+  lettercount.each do |char, num|
+  	if num > 2
+      frequentletters << char
+    end
+	end
+	return frequentletters
+end
+
+print frequent_letters('mississippi') #=> ["i", "s"]
+puts
+print frequent_letters('bootcamp') #=> []
+puts
