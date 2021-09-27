@@ -1,0 +1,25 @@
+def element_times_index(numbers)
+	# times_indx_nums = []
+  	new_nums = []
+  
+  	i = 0
+  
+  # alkuperäinen idea:
+  # while i < numbers.length
+    # og_nums = numbers[i] 
+    # new_nums = og_nums * i
+    # times_indx_nums << new_nums
+  
+  while i < numbers.length
+    new_nums << numbers[i] * i
+    
+    i += 1
+  end
+  
+  # return times_indx_nums
+  return new_nums
+end
+
+print element_times_index([4, 7, 6, 5])       # => [0, 7, 12, 15]
+puts
+print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
