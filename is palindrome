@@ -1,0 +1,17 @@
+def is_palindrome(word)
+	reverse = ""
+  
+  	i = 0
+  while i < word.length
+    char = word[i]
+    reverse = char + reverse
+    i += 1
+  end
+  
+  return reverse == word
+
+end
+
+puts is_palindrome("racecar")  # => true
+puts is_palindrome("kayak")    # => true
+puts is_palindrome("bootcamp") # => false
