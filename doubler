@@ -1,0 +1,18 @@
+def doubler(numbers)
+  double_nums = []
+  
+  i = 0
+  while i < numbers.length
+    og_nums = numbers[i]
+    new_nums = og_nums * 2
+    double_nums << new_nums
+    
+    i += 1
+  end
+
+  return double_nums
+end
+
+print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]
+puts
+print doubler([7, 1, 8])    # => [14, 2, 16]
